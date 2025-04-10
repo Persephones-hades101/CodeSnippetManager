@@ -6,7 +6,7 @@
       "use": "@vercel/static-build",
       "config": {
         "installCommand": "npm install --legacy-peer-deps",
-        "buildCommand": "npm run build",
+        "buildCommand": "npx prisma generate && npm run build",
         "distDir": "build"
       }
     }
