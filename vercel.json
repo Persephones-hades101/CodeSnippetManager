@@ -9,5 +9,8 @@
         "buildCommand": "npx prisma generate && npm run build"
       }
     }
-  ]
+  ],
+  "env": {
+    "DATABASE_URL": "@database_url"
+  }
 }
