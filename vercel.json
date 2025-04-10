@@ -3,11 +3,10 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/static-build",
+      "use": "@vercel/next",
       "config": {
         "installCommand": "npm install --legacy-peer-deps",
-        "buildCommand": "npx prisma generate && npm run build",
-        "distDir": "build"
+        "buildCommand": "npx prisma generate && npm run build"
       }
     }
   ]
